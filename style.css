@@ -1,0 +1,96 @@
+.card-container {
+  margin-left: 25%;
+  margin-top: 40px;
+  cursor: pointer;
+  display: inline;
+}
+.container {
+  margin-left: 10px;
+}
+.card {
+  width: 300px;
+  height: 400px;
+  box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+}
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+.img {
+  width: 100%;
+}
+
+.col {
+  float: left;
+  width: 40%;
+  padding: 0 10px;
+  display: inline;
+}
+.row {
+  margin-left: 40px;
+}
+details {
+  margin-left: 25%;
+  width: 20%;
+}
+.box {
+  width: 1500px;
+  height: 650px;
+  border: 1px solid;
+}
+.sub-box {
+  width: 200px;
+  height: 300px;
+  border: 1px solid;
+  margin-top: 5px;
+  margin-left: 5px;
+  margin-top: 5px;
+}
+.sub-box-right {
+  width: 50px;
+  height: 300px;
+  border: 1px solid;
+  margin-left: 5px;
+  margin-top: 5px;
+  float: right;
+}
+.btn {
+  background-color: red;
+  padding: 10px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: opacity 0.15s;
+}
+.btn:hover {
+  opacity: 0.1;
+}
+.btn:active {
+  opacity: 0.3;
+}
+.btn1 {
+  width: 70px;
+  height: 50px;
+  border: 1px solid blue;
+  background: none;
+  border-radius: 30px;
+}
+.btn1:hover {
+  background-color: rgb(3, 3, 172);
+  box-shadow: 0 4px 8px 0;
+  color: white;
+}
+p {
+  background-color: yellowgreen;
+  padding: 10px;
+}
+table,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  width: 200px;
+  height: 40px;
+  padding: 10px;
+}

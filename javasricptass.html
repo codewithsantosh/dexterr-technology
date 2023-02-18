@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Exercise 1 using for loop</h2>
+    <h3>[4,5,6,7,8,9]</h3>
+    <h3 id="result"></h3>
+    <script>
+        const arr=[4,5,6,7,8,9];
+        let ans="";
+        for(let i=0;i<arr.length;i++){
+             ans+=arr[i]*3+",";
+        }
+        document.getElementById("result").innerHTML="["+ans+"]";
+    </script>
+
+<h2>Exercise 1 using map</h2>
+<h3>[4,5,6,7,8,9]</h3>
+<h3 id="result1"></h3>
+<script>
+    let arr1=[4,5,6,7,8,9];
+    let a=arr1.map(test);
+    document.getElementById("result1").innerHTML="["+a+"]";
+    function test(x){
+        return x*3;
+    } 
+</script>
+ 
+  
+
+
+<h2>Exercise 2 using map</h2>
+<h3>[
+    {
+    name: "Angelina Jolie",
+    age: 80
+    },
+    {
+    name: "Eric Jones",
+    age: 2
+    },
+    {
+    name: "Paris Hilton",
+    age: 5
+    },
+    {
+    name: "Kayne West",
+    age: 16
+    },
+    {
+    name: "Bob Ziroll",
+    age: 100
+    }
+    ];</h3>
+<h3 id="result1"></h3>
+<script>
+    let array=
+  { name:"Angelina Jolie", name:"Eric Jones",name:"Paris Hilton",name:"Kayne West", name:"Bob Ziroll"};
+  const array1=[];
+  for(i=0;i<array.lenght;i++){
+    array1[i]=array[i];
+  document.write("<h3>["+array.name+",]</h3>");
+
+  }
+  
+</script>
+
+<h2>Exercise 3 using for loop</h2>
+<h3>[
+    { name: "Angelina Jolie", age: 80 },
+    { name: "Eric Jones", age: 2 },
+    { name: "Paris Hilton", age: 5 },
+    { name: "Kayne West", age: 16 },
+    { name: "Bob Ziroll", age: 100 }
+    ];
+    </h3>
+<h3 id="result2"></h3>
+<script>
+    let arr2=[
+{ name: "Angelina Jolie", age: 80 },
+{ name: "Eric Jones", age: 2 },
+{ name: "Paris Hilton", age: 5 },
+{ name: "Kayne West", age: 16 },
+{ name: "Bob Ziroll", age: 100 }
+];
+
+for(let ii=0;ii<arr2.length;ii++){
+    if(arr2[ii].age>21){
+  document.write("<h3>name:"+arr2[ii].name+"age:"+arr2[ii].age+"<h3>");
+    }
+  //  document.getElementById("result2").innerHTML="["+arr2[ii].name+"]"+arr2[ii].age+"]";
+    
+}    
+</script>
+
+
+</script>
+<h2>Exercise 4 sort using for loop</h2>
+<h3> [ "Ryu", "Ken", "Chun-Li", "Cammy", "Guile", "Sakura", "Sagat", "Juri" ];
+
+    </h3>
+<h3 id="result2"></h3>
+<script>
+arr3=[ "Ryu", "Ken", "Chun-Li", "Cammy", "Guile", "Sakura", "Sagat", "Juri" ];
+arr3.sort();
+    document.write("<h3>["+arr3+",]</h3>");
+
+
+    
+</script>
+
+
+</script>
+<h2>Exercise 4 sort using map</h2>
+<h3> [ "Ryu", "Ken", "Chun-Li", "Cammy", "Guile", "Sakura", "Sagat", "Juri" ];
+
+    </h3>
+<h3 id="result2"></h3>
+<script>
+arr4=[ "Ryu", "Ken", "Chun-Li", "Cammy", "Guile", "Sakura", "Sagat", "Juri" ];
+let v=arr4.map(sorttest);
+document.write("<h3>["+arr4.sort()+",]</h3>");
+   
+function sorttest(z){
+    return z;
+}
+    
+</script>
+
+<h3>Exercise 5</h3>
+<h3>[1,2,3,4], [4,5,6,7,8], [7,8,9,10,11]
+    <h3 id="fff"></h3>
+</h3>
+    <script>
+         a1=[1,2,3,4];
+         a2=[4,5,6,7,8];
+         a3=[7,8,9,10,11];
+        a4=a1.concat(a2);
+        a5=a4.concat(a3);
+        const a6 = new Set();
+        for(i=0;i<a5.lenght;i++){
+            a6.add[a5[i]];
+        }
+        let val='';
+        for(ii of a6.values())
+        val+=ii+' ';
+         document.write(val);
+
+    document.getElementById("fff").innerHTML=val;
+
+    </script>
+</body>
+</html>

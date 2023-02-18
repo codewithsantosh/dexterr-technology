@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      .container {
+        width: 250px;
+        margin-left: 500px;
+        display: block;
+        padding: 30px;
+        box-shadow: 0 4px 8px 0;
+        background-color: blue;
+      }
+
+      h2 {
+        color: white;
+      }
+    </style>
+  </head>
+
+  <body>
+    <button onclick="myfunon()">Turn on</button>
+    <img id="img" src="images/buloff.gif" alt="buloff" />
+    <button onclick="myfunoff()">Turn of</button><br /><br />
+
+    <b id="para">this is a webpage for designing websites</b>
+    <button onclick="myhid()">Click me</button><br /><br />
+
+    <b id="para1" style="display: none"
+      >this is a webpage for designing websites</b
+    >
+    <button onclick="myhid1()">Click me</button>
+
+    <div class="container">
+      <h2>Calculator</h2>
+
+      <input type="number" id="num1" placeholder="Enter number" /><br /><br />
+      <input type="number" id="num2" placeholder="Enter number" /><br /><br />
+      <button onclick="myadd()">add</button>
+      <button onclick="mysub()">sub</button>
+      <button onclick="mymul()">mul</button>
+      <button onclick="mydiv()">div</button><br /><br />
+
+      <b id="result"></b>
+    </div>
+    <script>
+      function myadd() {
+        let num1 = document.getElementById("num1").value;
+        let num2 = document.getElementById("num2").value;
+        let add = parseInt(num1) + parseInt(num2);
+        document.getElementById("result").innerHTML = add;
+      }
+      function mysub() {
+        let num1 = document.getElementById("num1").value;
+        let num2 = document.getElementById("num2").value;
+        let add = parseInt(num1) - parseInt(num2);
+        document.getElementById("result").innerHTML = add;
+      }
+      function mymul() {
+        let num1 = document.getElementById("num1").value;
+        let num2 = document.getElementById("num2").value;
+        let add = parseInt(num1) * parseInt(num2);
+        document.getElementById("result").innerHTML = add;
+      }
+      function mydiv() {
+        let num1 = document.getElementById("num1").value;
+        let num2 = document.getElementById("num2").value;
+        let add = parseInt(num1) / parseInt(num2);
+        document.getElementById("result").innerHTML = add;
+      }
+
+      function myhid() {
+        document.getElementById("para").style.display = "none";
+      }
+      function myhid1() {
+        document.getElementById("para1").style.display = "block";
+      }
+      function myfunon() {
+        document.getElementById("img").src = "images/bulbon.gif";
+      }
+      function myfunoff() {
+        document.getElementById("img").src = "images/buloff.gif";
+      }
+    </script>
+  </body>
+</html>
+
+<!-- 
+<details>
+    <summary>Click here</summary>
+    <p>Being known for those roguish behaviors, he tried to balance his troubled life with his career.
+         He gave his emotionally charged performance as playing an obsessed lover in In Your Name (2003) 
+         that translated into good reviews and a good run at the box office. He not only managed to revive his career 
+         but also to restore the confidence of his producers and distributors alike.</p>
+</details>
+
+<template>
+    <h2>Nature</h2>
+    <img src="nature.jpg" width="214" height="204">
+  </template>
+<button onclick="myfun()"> show me</button>
+
+<br>
+<button class="btn">SUBSCRIBE</button>
+<button class="btn1">Like</button>
+<hr>
+<table class="tb">
+    <tr>
+        <th>id</th>
+        <th>name</th>
+        <th>address</th>
+        <th>email</th>
+
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>santosh</td>
+        <td>shantinagar</td>
+        <td>san@gmai.com</td>
+
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>santosh</td>
+        <td>shantinagar</td>
+        <td>san@gmai.com</td>
+
+    </tr>
+    <tr>
+        <td>3
+            
+        </td>
+        <td>santosh</td>
+        <td>shantinagar</td>
+        <td>san@gmai.com</td>
+
+    </tr>
+</table>
+
+
+<script>
+    function myfun(){
+        var temp = document.getElementsByTagName("template")[0];
+  var clon = temp.content.cloneNode(true);
+  document.body.appendChild(clon);
+    }-->
